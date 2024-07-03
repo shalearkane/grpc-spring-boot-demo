@@ -21,6 +21,12 @@ repositories {
 
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE'
+	runtimeOnly 'io.grpc:grpc-netty-shaded:1.64.0'
+	implementation 'io.grpc:grpc-protobuf:1.64.0'
+	implementation 'io.grpc:grpc-stub:1.64.0'
+	implementation 'io.netty:netty-transport-native-epoll'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'com.google.protobuf:protobuf-java:4.27.2'
 	developmentOnly "org.springframework.boot:spring-boot-devtools"
