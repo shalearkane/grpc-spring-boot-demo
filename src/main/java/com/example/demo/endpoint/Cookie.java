@@ -18,7 +18,7 @@ public class Cookie {
     @GetMapping(value = {""})
     public ResponseEntity<String> find() throws IOException {
         String response = new String("hello");
-        Message.SimpleYesNo message = Message.SimpleYesNo.newBuilder().setYes(true).build();
+        MessageGRPC.SimpleYesNo message = MessageGRPC.SimpleYesNo.newBuilder().setYes(true).build();
         String s = message.toString();
         System.out.println(s);
 

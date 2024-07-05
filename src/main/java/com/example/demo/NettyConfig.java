@@ -9,7 +9,7 @@ import reactor.netty.http.server.HttpServer;
 
 import java.util.Collections;
 
-@Configuration
+//@Configuration
 public class NettyConfig {
 
     @Bean
